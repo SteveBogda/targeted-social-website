@@ -1,0 +1,71 @@
+@media #{$xs} {
+
+
+	.subpage.window-wall{
+		background-image: url('../img/brick.jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		height: 250px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		border-bottom: 1px solid #ffffff;
+		box-shadow: 2px 2px 5px #999999;
+		margin-top: 55px;
+
+		.wrapper {
+			margin-top: 20px;
+			padding: 20px;
+			background-size: cover;
+			width: 315px;
+			height: 200px;
+			margin-left: 50%;
+			@include transform(translateX(-50%));
+		}	
+
+		
+
+		h1 {
+			font-weight: bold;
+			text-align: center;
+			margin-top: 60px;
+			font-size: 27px;
+			color: #ffffff;
+			text-shadow: 2px 2px 2px $targetedBlue;
+		}
+
+
+
+		.lead {
+			color: #ffffff;
+			text-shadow: 2px 2px 3px #000000;	
+			text-align: center;
+		}
+
+		h2.learn {
+			font-size: 13px;
+			letter-spacing: 0.2em;
+			color: #ffffff;
+			font-weight: 700;
+			margin-bottom: 5px;
+			margin-top: 0px;
+			text-shadow: 2px 2px 2px $targetedBlue;
+
+		}
+
+		.learn-icon {
+			margin-top: 0px;
+		}
+	}
+}
+
+@media #{$md} {
+
+
+	.subpage.window-wall{
+	
+		margin-top: 83px;
+
+	}
+}

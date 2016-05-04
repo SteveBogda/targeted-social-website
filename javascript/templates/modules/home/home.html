@@ -1,0 +1,163 @@
+<!-- Loading Bar -->
+
+<div id="fountainG">
+    <div id="fountainG_1" class="fountainG"></div>
+    <div id="fountainG_2" class="fountainG"></div>
+    <div id="fountainG_3" class="fountainG"></div>
+    <div id="fountainG_4" class="fountainG"></div>
+    <div id="fountainG_5" class="fountainG"></div>
+    <div id="fountainG_6" class="fountainG"></div>
+    <div id="fountainG_7" class="fountainG"></div>
+    <div id="fountainG_8" class="fountainG"></div>
+</div>
+
+<!-- Directives in javascript/modules/home/ -->
+<home-overlay></home-overlay>
+
+    <home-billboard class="billboard-wrapper bounceInRight animated"></home-billboard>
+
+
+<div class=" hidden-xs hidden-sm visible-md visible-lg">
+
+    <div id="clouds">
+        <div class="cloud x1"></div>
+        <!-- Time for multiple clouds to dance around -->
+        <div class="cloud x2"></div>
+        <div class="cloud x5"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x3"></div>
+        <div class="cloud x5"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x5"></div>
+    </div>
+</div>
+
+
+<div class="road animated slideInRight">
+</div>
+
+<div class="taxi hidden-xs hidden-sm visible-md visible-lg">
+</div>
+
+
+
+<div class="container-fluid home base">
+
+
+    <div class="bgBuildings animated fadeIn "></div>
+
+    <img class="rock skyscraper animated bounceInUp hidden-xs hidden-sm visible-md visible-lg" src='img/rockefeller.png'></img>
+    <img class="chrystler skyscraper animated bounceInUp hidden-xs hidden-sm visible-md visible-lg" src='img/chrystler.png'></img>
+    <img class="empire skyscraper animated bounceInUp hidden-xs hidden-sm visible-md visible-lg" src='img/empire.png'></img>
+    <img class ="citicorp skyscraper animated bounceInUp hidden-xs hidden-sm visible-md visible-lg" src='img/citicorp.png'></img>
+
+    <img class ="tree-1 tree fadeIn animated" src='img/trees_1.png'></img>
+    <img class ="tree-2 tree fadeIn animated"  src='img/trees_2.png'></img>
+    <img class ="tree-3 tree fadeIn animated" src='img/trees_1.png'></img>
+
+    <img class ="tree-4 tree fadeIn animated" src='img/trees_2.png'></img>
+
+    <img class ="tree-5 tree fadeIn animated" src='img/trees_1.png'></img>
+
+    <img class ="tree-6 tree fadeIn animated" src='img/trees_1.png'></img>
+
+
+
+    <div class="building-wrapper ">
+        <div class="building fadeIn animated"  >
+            <div class="col-xs-4 paid-media window">
+                <div class="perspective">
+                    <div class="window-pane left hidden-xs visible-sm visible-md visible-lg"></div>
+                    <div class="window-pane right hidden-xs visible-sm visible-md visible-lg"></div>
+                </div>
+                <a href="/#/paid-media"><span>Paid <br>Media</span></a>
+
+
+            </div>
+            <div class="col-xs-4 tech window">
+
+                <div class="perspective">
+                    <div class="window-pane left hidden-xs visible-sm visible-md visible-lg"></div>
+                    <div class="window-pane right hidden-xs visible-sm visible-md visible-lg"></div>
+                </div>
+                <a href="/#/technology"><span>Tech &<br> Web<br>Dev</span></a>
+
+            </div>
+            <div class="col-xs-4 creative window">
+                <div class="perspective">
+                    <div class="window-pane left hidden-xs visible-sm visible-md visible-lg"></div>
+                    <div class="window-pane right hidden-xs visible-sm visible-md visible-lg"></div>
+                </div>
+                <a href="/#/creative"><span>Creative</span></a>
+
+            </div>
+            <div class="col-xs-4 content window">
+               <div class="perspective">
+                    <div class="window-pane left hidden-xs visible-sm visible-md visible-lg"></div>
+                    <div class="window-pane right hidden-xs visible-sm visible-md visible-lg"></div>
+                </div>
+                <a href="/#/content-management">               
+                    <span> 
+                        Content<br>
+                        <div class="small-management">Management</div>
+                    </span>
+                </a>
+            </div>
+            <div class="col-xs-4 contact window">
+
+                    <div class="perspective">
+                        <div class="media-window-pane left hidden-xs visible-sm visible-md visible-lg"></div>
+                        <div class="media-window-pane right hidden-xs visible-sm visible-md visible-lg"></div>
+                    </div>
+                    <a href="/#/contact"> 
+                        <div class="label-lg"><i class="fa fa-envelope"></i></div>
+                       Contact<br>Us
+                    </a>
+            </div>
+            <div class="col-xs-4 team window">
+                <div class="perspective">
+                    <div class="window-pane left hidden-xs visible-sm visible-md visible-lg"></div>
+                    <div class="window-pane right hidden-xs visible-sm visible-md visible-lg"></div>
+                </div>
+                <a href="/#/team">About<br>Us</a>
+            </div>
+            <div class="col-xs-4 clients window">
+                <div class="perspective">
+                    <div class="window-pane left hidden-xs visible-sm visible-md visible-lg"></div>
+                    <div class="window-pane right hidden-xs visible-sm visible-md visible-lg"></div>
+                </div>
+                <a href="/#/clients">Our<br>Clients</a>
+            </div>
+            <div class="col-xs-4 political window" >
+                <div class="perspective">
+                    <div class="window-pane left hidden-xs visible-sm visible-md visible-lg"></div>
+                    <div class="window-pane right hidden-xs visible-sm visible-md visible-lg"></div>
+                </div>
+                <a href="http://www.getsocialitical.com/"  target="_blank">Social<br>Media</span><br>for<br>Politics</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script>
+    
+      
+
+    $(function() {
+
+
+
+
+      setTimeout(function(){ $('#clouds').addClass('active');}, 1500);
+      setTimeout(function(){ $('.window-pane').addClass('open');}, 5000);
+      setTimeout(function(){ $('.brand-bg').addClass('fade');}, 3000);
+
+  });
+
+
+
+   
+
+</script>

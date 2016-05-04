@@ -1,0 +1,617 @@
+@media #{$xs} {
+
+
+	.container-fluid.home.base {
+		background-repeat: repeat-x;
+		background-size: 100%;
+		position: absolute;
+		top: 0px;
+		padding: 0px;
+ 
+
+	.building-wrapper {
+		max-height: 430px;
+		max-width: 310px;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		bottom: 20px;
+		z-index: 3;
+		margin-left: 50%;
+		@include transform(translateX(-50%));
+	}
+
+	.bgBuildings {
+		@include transition(0.5s all);
+		background-image: url('../img/buildings-bg.png');
+		height: 100%;;
+		width: 100%;
+		background-repeat: repeat-x;
+		background-size: 800px;	
+		background-position: bottom;
+		max-height: 600px;
+		position: absolute;
+		z-index: 1;
+		bottom: -40px;
+		left: 0;
+		@include animation-delay(3s);
+
+	}
+
+	.building {
+		width: 100%;
+		height: 100%;
+		@include animation-delay(4s);
+		background-image: url('../img/homepage/building-2.png');
+		background-size: cover;
+		color: #ffffff;
+		text-align: center;
+		font-weight: 700;
+
+
+
+			a {
+				@include transition(0.5s all);
+
+				color: #ffffff;
+				text-shadow: 1px 1px 2px $targetedBlue;
+				&:hover {
+					color: #95b0f9;
+					text-decoration: none;
+				}
+			}
+
+			.window {
+				font-size: 9px;
+				z-index: 100000;
+				position: absolute;
+			}
+
+
+			.paid-media { 
+				left: 6.5%;
+				top: 28%;
+				
+			}
+
+			.tech { 
+				left: 34%;
+				top: 26%;
+
+			}
+
+			.creative {
+				left: 61%;
+				top: 28%;
+				
+			}
+
+			.content {
+				position: absolute;
+				left: 6.5%;
+				top: 53%;
+
+				.small-management {
+					font-size: 6px;
+				}
+			}
+
+			.window.contact {
+				left: 33.5%;
+				top: 50%;	
+				font-size: 13px;
+			}
+
+			.team {
+				left: 61%;
+				top: 53%;
+
+			}
+
+			.clients {
+				left: 6.5%;
+				top: 78%;
+
+			}
+
+			.political {
+				left: 61%;
+				top: 75%;
+			}
+		}
+
+	}
+
+	.window-pane {
+		height: 79px;
+		width: 35px;
+		display: inline-block;
+		position: absolute;
+		background-image: url('../img/window-desktop.png');
+		background-size: cover;
+		top: -20px;
+		cursor: pointer;
+		@include transform(translateY(0px));
+		@include transition(1s transform linear);
+	}
+
+
+
+
+	.window-pane.left {
+		left: 29px;
+	}
+	.window-pane.right {
+		left: 64px;
+	}
+
+	.creative .window-pane {
+		top: -29px;
+	}
+
+	.tech .window-pane {
+		top: -14px;
+	}
+
+	.paid-media .window-pane.left {
+		left: 28px;
+	}
+
+	.paid-media .window-pane.right {
+		left: 63px;
+	}
+
+	.window-pane.left, .media-window-pane.left {
+		-webkit-transform-origin: 0px;
+		-webkit-transition-delay: 0.5s;
+	}
+
+	.window-pane.right, .media-window-pane.left  {
+		-webkit-transform-origin: 32px;
+		-webkit-transition-delay: 0.2s ease-in-out;
+	}
+
+	.window-pane.left, .media-window-pane.left {
+		@include transform-origin(0px);
+	}
+
+	.window-pane.right, .media-window-pane.left  {
+		@include transform-origin(32px);
+
+	}
+
+
+	.political .window-pane  {
+		top: -3px;
+	}
+
+
+
+	.open.right {
+		@include transform(rotateY(130deg));
+
+	}
+
+	.open.left {
+		@include transform(rotateY(-120deg));
+
+	}
+
+
+
+
+ 	.perspective {
+        @include perspective(600px);
+        z-index: 100000000000000000;
+
+    }
+        
+}
+
+
+@media #{$xsExtra} {
+
+	.road {
+		bottom: -10px;
+	}
+
+	.container-fluid.home.base {
+
+		.building-wrapper {
+		
+			bottom: 40px;
+		
+		} 		
+	}
+
+
+}
+
+
+@media #{$sm} {
+
+	.road {
+		bottom: 0px;
+	}
+
+
+	.container-fluid.home.base {
+
+		.building-wrapper {
+			max-height: 650px;
+			max-width: 450px;
+			bottom: 10px;
+		} 
+
+		.building {
+			
+
+			.window {
+					font-size: 11px;
+					z-index: 100000;
+					position: absolute;
+				}
+
+
+				.creative { 
+					left: 61%;
+					top: 28.5%;
+					
+				}
+
+				.tech { 
+					left: 34%;
+					top: 26.5%;
+
+				}
+
+				.paid-media {
+					left: 6.5%;
+					top: 27.5%;
+
+				}
+
+				.content {
+					position: absolute;
+					left: 6.5%;
+					top: 53%;
+
+					.small-management {
+						font-size: 8px;
+					}
+				}
+
+				.window.contact {
+					left: 33.5%;
+					top: 51%;	
+					font-size: 15px;
+				}
+
+				.team {
+					left: 61%;
+					top: 53%;
+
+				}
+
+				.clients {
+					left: 6.5%;
+					top: 78%;
+
+				}
+
+				.political {
+					left: 61%;
+					top: 76%;
+				}
+		}
+	}
+}
+
+@media #{$md} {
+	.container-fluid.home.base {
+
+		.building-wrapper {
+			max-width: 470px;
+			max-height: 650px;
+			bottom: 10px;
+			@include transform(translateX(-100%));
+
+		} 
+
+		.building {
+		
+			left: -5%;
+			background-image: url('../img/homepage/building-2.png');
+			background-size: cover;
+			position: absolute;
+			bottom: 40px;
+
+
+			.window {
+					font-size: 13px;
+				}
+
+
+				.creative { 
+					left: 60.5%;
+					top: 28.5%;
+					
+				}
+
+				.tech { 
+					left: 34%;
+					top: 26%;
+
+				}
+
+				.paid-media {
+					
+					left: 6.5%;
+					top: 27%;
+				}
+
+				.content {
+					left: 6.5%;
+					top: 53%;
+				}
+
+
+
+				.window.contact {
+					left: 33.5%;
+					top: 50.5%;	
+					font-size: 18px;
+				}
+
+				.team {
+					left: 61%;
+					top: 53%;
+
+				}
+
+				.clients {
+					left: 6%;
+					top: 78%;
+
+				}
+
+				.political {
+					left: 61%;
+					top: 75.5%;
+				}
+		}
+	}
+
+}
+
+
+@media #{$sm} {
+	.container-fluid.home.base {
+		padding-left: 0%;
+
+
+
+		.building {
+			width: 450px;
+			max-height: 650px;
+			position: absolute;
+			bottom: 40px;
+
+
+			.window {
+				font-size: 13px;
+				z-index: 100000;
+				position: absolute;
+				a {
+					@include transition(0.5s all);
+
+					color: #ffffff;
+					&:hover {
+						color: #95b0f9;
+						text-decoration: none;
+					}
+				}
+
+			}
+
+
+			.creative { 
+				left: 62.5%;
+				top: 28%;
+				z-index: 10000;
+			}
+
+			.tech { 
+				left: 35%;
+				top: 25.5%;
+
+			}
+
+			.paid-media {
+				left: 7%;
+				top: 27%;
+				
+
+			}
+
+			.content {
+				position: absolute;
+				left: 7%;
+				top: 51.5%;
+
+				.small-management {
+					font-size: 9px;
+				}
+			}
+
+			.window.contact {
+				left: 34.5%;
+				top: 49%;	
+				font-size: 18px;
+			}
+
+			.team {
+				left: 62.5%;
+				top: 51.5%;
+
+			}
+
+			.clients {
+				left: 7%;
+				top: 76%;
+
+			}
+
+			.political {
+				left: 62.5%;
+				top: 74%;
+			}
+
+		}
+
+	}
+}
+
+@media #{$md} {
+	.container-fluid.home.base {
+		
+
+		.building-wrapper {
+
+			@include transform(translateX(-100%));
+
+		} 
+	}
+}
+@media #{$lg} {
+	
+	.container-fluid.home.base {
+		padding-left: 8%;
+		
+
+		.building-wrapper {
+
+			@include transform(translateX(-140%));
+
+		} 
+	}
+
+
+}
+
+
+@media #{$lgExtra} {
+	
+	.container-fluid.home.base {
+		padding-left: 8%;
+		
+
+	}
+
+
+}
+
+@media screen and (min-width : 1300px) , screen and (min-height: 1000px){
+
+
+
+    .container-fluid.home.base {
+    	padding-left: 0%;
+    	padding-left: 2%;
+
+
+    	.bgBuildings {
+    		@include transition(0.5s all);
+    		background-size: 1100px;	
+    		max-height: 900px;
+    		position: absolute;
+
+    	}
+
+
+    	.building {
+    		max-height: 850px;
+    		height: 850px;
+    		width: 600px;
+
+    		.window {
+    			font-size: 17px;
+    		}
+    	}
+
+    	.window-pane {
+    		height: 100px;
+    		width: 40px;
+    		cursor: pointer;
+    	}
+
+    	.window-pane.right, .media-window-pane.left  {
+    		@include transform-origin(40px);
+
+    	}
+
+
+
+
+
+    	.building .tech {
+    		left: 34%;
+    	}
+
+    	.building .creative {
+    		left: 61.25%;
+    		    top: 27.5%;
+    	}
+
+    	.building .team {
+    		left: 61.5%
+
+    	}
+
+    	.building .content {
+    		left: 6.5%;
+    		.small-management {
+    			font-size: 11px;
+    		}
+    	}
+
+    	.building .political {
+    		left: 61%;
+    	}
+
+    	.building .paid-media {
+    		left: 6.5%;
+    		top: 26%;
+    	}
+
+    	.building .window.contact {
+    		font-size: 20px;
+    		left: 33.5%;
+    		top: 50%;
+    	}
+
+    	.building .clients {
+    		left: 6.5%;
+    	}
+
+    	.building .team {
+    		left: 61%;
+    	}
+
+
+    	.window-pane.left {
+    		left: 40px;
+    	}
+    	.window-pane.right {
+    		left: 85px;
+    	}
+
+    	
+    }
+
+    	.tree-1, .tree-2, .tree-3, .tree-4, .tree-5, .tree-6 {
+    		height: 700px;
+    	}
+
+    	
+}

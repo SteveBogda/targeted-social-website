@@ -1,0 +1,75 @@
+/* COLOR PALETTE */
+
+$targetedBlue: #5e97fc;
+$green: #65ce83;
+$purple: #8c8cf4;
+$yellow: #ffcc00;
+$darkpurple: #36303f;
+$pink: rgb(255, 197, 253);
+$border-color: #7b7b7c;
+$light: #ffffff;
+$dark: #151516;
+$sidebar: #364356;
+
+
+
+
+/*SOCIAL ICONS */
+$facebook: #465997;
+$twitter: #3aacf9;
+$google: #000000;
+
+
+
+/* RESPONSIVE POINTS */
+
+/* Font Faces */
+
+
+
+
+@font-face {
+    font-family: CenturyGothic;
+    src: url('../fonts/Century_Gothic.woff');
+}
+
+@font-face {
+    font-family: CenturyGothic-Mobile;
+    src: url("http://db.onlinewebfonts.com/t/09f6b2ba02572f19a7d7dd2b5f6494ad.eot");
+       src: url("http://db.onlinewebfonts.com/t/09f6b2ba02572f19a7d7dd2b5f6494ad.eot?#iefix") format("embedded-opentype"),
+       url("http://db.onlinewebfonts.com/t/09f6b2ba02572f19a7d7dd2b5f6494ad.woff") format("woff"),
+       url("http://db.onlinewebfonts.com/t/09f6b2ba02572f19a7d7dd2b5f6494ad.ttf") format("truetype"),
+       url("http://db.onlinewebfonts.com/t/09f6b2ba02572f19a7d7dd2b5f6494ad.svg#Century Gothic") format("svg");
+}
+
+
+
+
+/*Icomoon */
+ @font-face {
+        font-family: 'icomoon';
+        src:url('../fonts/icons/icomoon.eot');
+        src:url('../fonts/icons/icomoon.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/icons/icomoon.woff') format('woff'),
+            url('../fonts/icons/icomoon.ttf') format('truetype'),
+            url('../fonts/icons/icomoon.svg#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+
+/* MEDIA QUERY BREAKPOINT */
+
+$xs: "only screen and (min-width : 300px)";
+$xsExtra: "only screen and (min-width : 375px)";
+
+$sm: "only screen and (min-width : 480px)";
+$smExtra: "only screen and (min-width : 680px)";
+$billboard: "only screen and (min-width : 800px)";
+
+$md: "only screen and (min-width : 992px)";
+$lg: "only screen and (min-width : 1200px)";
+$lgExtra: "only screen and (min-width : 1400px)";
+
+$tall: "only screen and (min-height : 830px)";
+

@@ -1,0 +1,50 @@
+@media #{$xs} {
+
+	.sections-wrapper.tech {
+		.development-tabs {
+			li span {
+				font-size: 20px;
+			}
+		}
+		.tech-lists {
+			color: #ffffff;
+			padding: 0px;
+
+			.col-xs-12 {
+				background-color: #171619;
+
+				border-right: 2px solid #ffffff;
+			}
+
+	
+
+			.list-icon {
+				text-align: center;
+				color: $targetedBlue;
+				font-size: 28px;
+				margin-top: 15px;
+
+			}
+
+			h2 {
+				font-size: 24px;
+				font-weight: 700;
+				margin-bottom: 40px;
+				text-align: center;
+				color: $targetedBlue;
+
+			}
+
+			ul {
+				list-style-type: none;
+				padding: 0px;
+				text-align: center;
+
+				li {
+					margin-bottom: 15px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+ }

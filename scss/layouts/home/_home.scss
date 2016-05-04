@@ -1,0 +1,224 @@
+
+@media #{$xs} {
+
+
+	.brand-bg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		max-width: 600px;
+		opacity: 1;
+		@include transform(translateX(-50%));
+		@include animation-delay(1s);
+
+	}
+
+	.brand-bg.fade {
+		display: none;
+	}
+
+ 	.road {
+ 		position: absolute;
+ 		z-index: 5000;
+ 		background-image: url('../img/homepage/road.png');
+ 		height: 50px;
+ 		width: 100%;
+ 		bottom: -20px;
+ 		@include animation-delay(1.2s);
+
+
+ 	}
+	.rock {
+		position: absolute;
+		left: 80%;
+		height: 80%;
+		bottom: 20px;
+		@include animation-delay(2s);
+
+
+	}
+
+	.chrystler{
+		position: absolute;
+		left: 60%;
+		height: 90%;
+		bottom: 20px;
+		@include animation-delay(2.5s);
+
+
+
+	}
+
+	.tree {
+		@include animation-delay(3s);
+
+	}
+
+	.empire{
+		position: absolute;
+		left: 40%;
+		height: 100%;
+		bottom: 50px;
+		@include animation-delay(2.5s);
+
+	}
+
+	.citicorp{
+		position: absolute;
+		left: 2%;
+		height: 90%;
+		bottom: 20px;
+		@include animation-delay(2.8s);
+
+		
+	}
+
+	.tree-1 {
+		z-index: 3;
+		height: 400px;
+		width: auto;
+		bottom: 15px;
+
+		position: absolute;
+		left: -19%;
+
+	}
+
+	.tree-4 {
+		z-index: 3;
+		height: 400px;
+		width: auto;
+		bottom: 15px;
+
+		position: absolute;
+		left: -65%;
+
+	}
+
+	.tree-5 {
+		z-index: 3;
+		height: 400px;
+		width: auto;
+		bottom: 15px;
+
+		position: absolute;
+		left: 70%;
+
+	}
+
+	.tree-6 {
+		z-index: 3;
+		height: 400px;
+		width: auto;
+		bottom: 15px;
+
+		position: absolute;
+		left: 0%;
+
+	}
+
+	.tree-2 {
+		z-index: 3;
+		height: 400px;
+		width: auto;
+		bottom: 0;
+		position: absolute;
+		left: 40%;
+		bottom: 15px;
+
+
+	}
+
+	.tree-3 {
+		z-index: 3;
+		height: 400px;
+		width: auto;
+		bottom: 0;
+		position: absolute;
+		left: 95%;
+		bottom: 15px;
+	}
+		
+}
+
+
+
+
+@media #{$xsExtra} {
+
+	.road {
+		bottom: 0px;
+	}
+	
+
+
+}
+
+
+
+
+
+@media #{$smExtra} {
+	
+	.road {
+		position: absolute;
+		z-index: 5000;
+		background-image: url('../img/homepage/road.png');
+		height: 50px;
+		width: 100%;
+		bottom: 0px;
+	}
+
+
+
+}
+
+
+@media #{$billboard} {
+
+}
+
+@media #{$md} {
+
+	@keyframes driving{   
+	  0%{left:250%;}
+	  100%{left: -150%}
+	} 
+
+
+	.taxi {
+		position: absolute;
+		left: 250%;
+		z-index: 10000;
+		background-image: url('../img/homepage/cab.png');
+		height: 150px;
+		width: 400px;
+		background-size: cover;
+		bottom: 0px;
+		animation:driving 15s infinite;
+		@include animation-delay(7s);
+		-webkit-animation-fill-mode: forwards;
+
+	}
+
+	.homeOverlay {
+
+		display: none;
+
+
+
+	}
+
+	.container-fluid.home.base {
+		padding-left: 2%;
+
+
+
+
+	}
+
+
+
+}
+
+

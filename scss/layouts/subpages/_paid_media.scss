@@ -1,0 +1,279 @@
+@media #{$xs} {
+
+	#why {
+
+		p {
+			font-size: 12px;
+		}
+	}
+
+	h2 {
+		padding: 20px;
+		font-size: 22px;
+	}
+
+	.sections-wrapper.media {
+
+	
+
+		font-size: 12px;
+		padding: 0px;
+
+
+		.skills-lists .questions.list {
+			background-color: #ffffff;
+			margin-bottom: 0px;
+			border: 1px solid rgba(0,0,0,0.1);
+			box-shadow: 0px 0px 2px $targetedBlue;
+			padding: 0px;
+			.header {
+				background-color: $targetedBlue;
+				margin: 0px;
+				padding: 0px;
+				color: #ffffff;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				margin-bottom: 15px;
+			}
+
+
+
+			li {
+				color:$targetedBlue;
+				text-align: left;
+
+
+				i {
+					font-size: 22px;
+					color: #000000;
+					margin-right: 5px;
+					color: $targetedBlue;
+				}
+
+			}
+
+			.list-icon {
+				i {
+					background-color: $targetedBlue;
+					margin-bottom: 20px;
+					box-shadow: 0px 0px 0px;
+				}
+			}
+
+		}
+		ul.review-list {
+			list-style-type: none;
+			padding: 0px;
+			background-color: rgba(255,255,255,0.75);
+			border-radius: 5px;
+			border: 1px solid $targetedBlue;
+			li {
+				border-bottom: 1px solid #ffffff;
+				padding: 15px;
+				color: #20252d;
+				font-weight: 700;
+				text-align: center;
+				text-shadow: none;
+			}
+
+			li:last-child {
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+
+			
+		}
+
+
+
+		.skills-lists {
+			padding: 0px;
+
+	
+			h2 {
+				font-size: 24px;
+				font-weight: 700;
+				text-align: center;
+				margin-top: 15px;
+			}
+
+			.list-icon {
+				font-size: 35px;
+				text-align: center;
+				margin-top: 20px;
+
+				i {
+					background-color: $targetedBlue;
+					border-radius: 50%;
+					height: 67px;
+					width: 67px;
+					padding-top: 14px;
+					border: 1px solid #ffffff;
+					box-shadow: 2px 2px 2px #000000;
+				}
+			}
+
+			ul {
+				list-style-type: none;
+				text-align: center;
+				padding: 10px;
+				width: 100%;
+
+				
+
+				li {
+					padding-top: 20px;
+					padding-bottom: 20px;
+					border-bottom-left-radius: 15px;
+				}
+			}
+		}
+
+		.skills-lists .skills-lists-box {
+			border-radius: 5px;
+			margin-top: 15px;
+			border: 1px solid #ffffff;
+			background-color: transparent;
+			box-shadow: 0px 0px 2px #ffffff;
+
+			li {
+				font-weight: 700;
+				border-bottom-left-radius: 2px;
+				font-size: 13px;
+				padding: 10px;
+
+				i {
+					font-size: 18px;
+				}
+			}
+			li:last-child {
+				border: none;
+			}
+
+			img {
+				border: 1px solid rgba(0,0,0,0.2);
+			}
+		}
+
+		.skills-lists .skills-lists-box {
+			border-radius: 5px;
+			margin-top: 15px;
+			border: 1px solid $targetedBlue;
+			box-shadow: 0px 0px 2px #ffffff;
+
+			li {
+				font-weight: 700;
+				border-bottom-left-radius: 2px;
+				font-size: 16px;
+				padding: 15px;
+
+				i {
+					font-size: 22px;
+				}
+			}
+		}
+
+		.purpose-item-wrapper {
+			color: #000000;
+		}
+
+		.purpose-item {
+			max-height: 388px;
+			margin-top: 50px;
+		}
+
+		.purpose-item:last-child {
+			padding-bottom: 30px;
+		}
+
+		.badge {
+			background-color: $targetedBlue;
+		}
+
+		.section.blue {
+			background-color: $targetedBlue;
+			color: #ffffff;
+		}
+
+		.section.black {
+			background-color: #20252d;
+			color: $targetedBlue;
+			border-top: 1px solid #ffffff;
+
+			h2 {
+				margin-top: 0px;
+				padding-top: 35px;
+
+			}
+
+			hr {
+				border-top: none;
+			}
+		}
+
+		.section.sky .flipper {
+			-moz-transform: scaleY(-1);
+			   -o-transform: scaleY(-1);
+			   -webkit-transform: scaleY(-1);
+			   transform: scaleY(-1);
+			   filter: FlipV;
+			   -ms-filter: "FlipV";
+		}
+		.section.sky {
+			
+
+			background: url("../img/subpages/paid-media/background2.jpg");
+			background-size: cover;
+			-webkit-transform: translate3d(0,0,0);
+			-moz-transform: scaleY(-1);
+			   -o-transform: scaleY(-1);
+			   -webkit-transform: scaleY(-1);
+			   transform: scaleY(-1);
+			   filter: FlipV;
+			   -ms-filter: "FlipV";
+			color: #ffffff;
+			text-shadow: 2px 2px 1px #000000;
+
+			
+
+			hr {
+				border-bottom: none;
+			}
+
+			h2 {
+				color: #ffffff;
+				font-weight: 700;
+				text-shadow: 1px 1px 5px #20252d;;
+			}
+
+		}
+	}
+} 
+
+@media #{$md} {
+	#why p {
+		font-size: 16px;
+	}
+
+	ul.review-list {
+
+		li {
+			font-size: 18px;
+		}
+ 	}
+
+	.questions.list p {
+		padding-top: 10px;
+	}
+	.sections-wrapper.media {
+
+
+
+	}
+
+
+	h2 {
+		padding: 20px;
+		font-size: 28px;
+	}
+}

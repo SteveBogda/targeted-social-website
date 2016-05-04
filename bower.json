@@ -1,0 +1,29 @@
+{
+  "name": "Bananabel",
+  "version": "0.0.0",
+  "authors": [
+    "Stephen Bogda <steve@ridgebox.com>"
+  ],
+  "description": "Party-planning website",
+  "license": "MIT",
+  "homepage": "http://bananabel.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-route": "~1.4.6",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "jquery-ui": "~1.11.4",
+    "angular-animate": "~1.4.7",
+    "slick-carousel": "~1.5.8"
+  },
+  "resolutions": {
+    "angular": "~1.4.6"
+  }
+}

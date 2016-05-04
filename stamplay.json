@@ -1,0 +1,10 @@
+{
+  "appId": "targetedsocial",
+  "apiKey": "f996fcd30f10c947319062c7f5a4dc3aaeac2aab43f78ec32e4e205264dd4fb6",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
